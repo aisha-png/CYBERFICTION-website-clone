@@ -19,7 +19,7 @@ function locomotive() {
                 left: 0,
                 width: window.innerWidth,
                 height: window.innerHeight,
-            };
+            }; 
         },
         pinType: document.querySelector("#main").style.transform
         ? "transform"
