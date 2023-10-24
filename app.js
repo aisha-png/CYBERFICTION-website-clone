@@ -532,7 +532,7 @@ for (let i = 0; i < frameCount; i++){
 }
 
 gsap.to(imageSeq, {
-    frame: frameCount -1,
+    frame: frameCount - 1,
     snap: "frame",
     ease: `none`,
     scrollTrigger: {
@@ -549,7 +549,7 @@ images[1].onload = render;
 
 function render() {
     scaleImage(images[imageSeq.frame], context);
-  }
+}
 
 function scaleImage(img, ctx) {
     var canvas = ctx.canvas;
@@ -585,6 +585,7 @@ gsap.to("#page1",{
         trigger:`#page1`,
         start:`top top`,
         end:`bottom top`,
+        markers: true,
         pin:true,
         scroller:`#main`
     }
@@ -594,6 +595,7 @@ gsap.to("#page2",{
         trigger:`#page2`,
         start:`top top`,
         end:`bottom top`,
+        markers: true,
         pin:true,
         scroller:`#main`
     }
@@ -603,6 +605,7 @@ gsap.to("#page3",{
         trigger:`#page3`,
         start:`top top`,
         end:`bottom top`,
+        markers: true,
         pin:true,
         scroller:`#main`
     }
@@ -612,35 +615,39 @@ gsap.to("#page4",{
         trigger:`#page4`,
         start:`top top`,
         end:`bottom top`,
+        markers: true,
         pin:true,
         scroller:`#main`
     }
 })
 
-gsap.to("#page5",{
-    scrollTrigger:{
-        trigger:`#page5`,
-        start:`top top`,
-        end:`bottom top`,
-        pin:true,
-        scroller:`#main`
-    }
-})
-gsap.to("#page6",{
-    scrollTrigger:{
-        trigger:`#page6`,
-        start:`top top`,
-        end:`bottom top`,
-        pin:true,
-        scroller:`#main`
-    }
-})
-gsap.to("#page7",{
-    scrollTrigger:{
-        trigger:`#page7`,
-        start:`top top`,
-        end:`bottom top`,
-        pin:true,
-        scroller:`#main`
-    }
-})
+// gsap.to("#page5",{
+//     scrollTrigger:{
+//         trigger:`#page5`,
+//         start:`top top`,
+//         end:`bottom top`,
+//         markers: true,
+//         pin:true,
+//         scroller:`#main`
+//     }
+// })
+// gsap.to("#page6",{
+//     scrollTrigger:{
+//         trigger:`#page6`,
+//         start:`top top`,
+//         end:`bottom top`,
+//         markers: true,
+//         pin:true,
+//         scroller:`#main`
+//     }
+// })
+// gsap.to("#page7",{
+//     scrollTrigger:{
+//         trigger:`#page7`,
+//         start:`top top`,
+//         end:`bottom top`,
+//         markers: true,
+//         pin:true,
+//         scroller:`#main`
+//     }
+// })
