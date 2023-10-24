@@ -21,7 +21,7 @@ function locomotive() {
                 height: window.innerHeight,
             };
         },
-        pinType: document.querySelector("#main").computedStyleMap.transform
+        pinType: document.querySelector("#main").style.transform
         ? "transform"
         : "fixed",
     });
