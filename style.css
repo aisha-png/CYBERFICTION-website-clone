@@ -28,7 +28,10 @@ html, body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: white;
+    /* background-color: white; */
+    background: #1c1414;
+    background: linear-gradient(70deg, #0b0a0a, #343434);
+    color: white;
 }
 #page1 {
     position: relative;
@@ -84,7 +87,7 @@ canvas {
     top: 30%;
     height: 25%;
     width: 100%;
-    background-color: red;
+    /* background-color: red;  */
     font-size: 40px;
     font-size: 100px;
     white-space: nowrap;
@@ -99,7 +102,7 @@ canvas {
 #loop>h1 {
     font-weight: 400;
     animation-name: anim;
-    animation-duration: 15s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -113,6 +116,7 @@ canvas {
     -webkit-text-stroke: 1.2px #000;
     color: transparent;
     font-weight: 500;
+    
 }
 
 @keyframes anim {
@@ -130,10 +134,11 @@ canvas {
     justify-content: space-between;
     height: 7%;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     position: fixed;
     padding: 0px 30px;
     z-index: 9;
+    color: #fff;
 }
 #nav>h3 {
     font-size: 22px;
@@ -143,5 +148,19 @@ canvas {
     font-size: 22px;
 }
 
+#nav>button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: black;
+    color: #fff;
+    border: none;
+}
+#page>h3{
+    position: absolute;
+    top: 55%;
+    font-family: gilroy;
+    color: #7c7c7c;
+    left: 5%;
+}
 
 
