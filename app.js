@@ -13,6 +13,7 @@ function locomotive() {
             ? locoScroll.scrollTo(value, 0, 0)
             : locoScroll.scroll.instance.scroll.y;
         },
+        
         getBoundingClient() {
             return {
                 top: 0,
@@ -21,6 +22,7 @@ function locomotive() {
                 height: window.innerHeight,
             }; 
         },
+
         pinType: document.querySelector("#main").style.transform
         ? "transform"
         : "fixed",
